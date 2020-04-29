@@ -1,0 +1,175 @@
+Testing texts with diacritics:
+Testing text:
+expected result =
+1
+given result :
+1
+Test successful
+Testing text:
+expected result =
+1
+given result :
+1
+Test successful
+Testing text:
+expected result =
+2
+given result :
+2
+Test successful
+Testing text:
+expected result =
+2
+given result :
+2
+Test successful
+Testing text:
+expected result =
+1
+given result :
+1
+Test successful
+Testing text:
+expected result =
+1
+given result :
+1
+Test successful
+Testing text:
+expected result =
+2
+given result :
+2
+Test successful
+Testing text:
+expected result =
+2
+given result :
+2
+Test successful
+Testing text:
+expected result =
+2
+given result :
+2
+Test successful
+Success rate in %:
+100.0
+
+
+Testing texts without diacritics:
+Testing text:
+expected result =
+1
+given result :
+1
+Test successful
+Testing text:
+expected result =
+1
+given result :
+1
+Test successful
+Testing text:
+expected result =
+2
+given result :
+2
+Test successful
+Testing text:
+expected result =
+2
+given result :
+2
+Test successful
+Testing text:
+expected result =
+1
+given result :
+1
+Test successful
+Testing text:
+expected result =
+1
+given result :
+1
+Test successful
+Testing text:
+expected result =
+2
+given result :
+2
+Test successful
+Testing text:
+expected result =
+2
+given result :
+2
+Test successful
+Testing text:
+expected result =
+2
+given result :
+2
+Test successful
+Success rate in %:
+100.0
+
+
+Warning : `load_model` does not return WordVectorModel or SupervisedModel any more, but a `FastText` object which is very similar.
+testing CZ text:
+(('__label__cs',), array([1.00001693]))
+Test successful
+testing CZ text:
+(('__label__cs',), array([1.00001442]))
+Test successful
+testing Sk text:
+(('__label__sk',), array([0.97235513]))
+Test successful
+testing SK text:
+(('__label__sk',), array([0.92075437]))
+Test successful
+testing CZ text:
+(('__label__cs',), array([0.99899191]))
+Test successful
+testing CZ text:
+(('__label__cs',), array([0.99900305]))
+Test successful
+testing SK text:
+(('__label__sk',), array([0.98319989]))
+Test successful
+testing SK text:
+(('__label__sk',), array([0.96751398]))
+Test successful
+testing SK text:
+(('__label__sk',), array([0.9904201]))
+Test successful
+testing CZ text:
+(('__label__sl',), array([0.74962479]))
+Test failed
+testing CZ text:
+(('__label__cs',), array([0.74658448]))
+Test successful
+testing Sk text:
+(('__label__sk',), array([0.43442649]))
+Test successful
+testing SK text:
+(('__label__sk',), array([0.51751089]))
+Test successful
+testing CZ text:
+(('__label__cs',), array([0.51673436]))
+Test successful
+testing CZ text:
+(('__label__cs',), array([0.48861572]))
+Test successful
+testing SK text:
+(('__label__sk',), array([0.53647828]))
+Test successful
+testing SK text:
+(('__label__sk',), array([0.47298196]))
+Test successful
+testing SK text:
+(('__label__sk',), array([0.48346451]))
+Test successful
+Success rate in %:
+94.44444444444444
