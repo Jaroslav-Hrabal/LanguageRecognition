@@ -6,7 +6,7 @@ import preparation
 
 def countTrigrams(text):
     #inicialization, count starts with 2 starting symbols
-    table = np.zeros((43,43,43))
+    table = np.zeros((54,54,54))
     alphabet = preparation.makeAlphabet();
     temp1 = 42
     temp2 = 42
@@ -27,15 +27,15 @@ def countTrigrams(text):
 
 
 def smoothTable(table):
-    result =  np.zeros((43,43,43))
-    for j in range(43):
-        for k in range(43):
+    result =  np.zeros((54,54,54))
+    for j in range(54):
+        for k in range(54):
             #performance optimalization v3.0
             d = countThemAll(table,j,k)
             t = d['T']
             z = d['Z']
             n = d['N']
-            for i in range(43):
+            for i in range(54):
                 c = table[i,j,k]
                 #t = countT(table, j, k)
                 #z = countZ(table, j, k)
@@ -57,9 +57,9 @@ def countThemAll(table,temp1,temp2):
     countZ = 0
     countN = 0
     d = dict()
-    for i in range(43):
-        for j in range(43):
-            for k in range(43):
+    for i in range(54):
+        for j in range(54):
+            for k in range(54):
                 if j == temp1:
                     if k == temp2:
                         countN += table[i,j,k]
@@ -75,9 +75,9 @@ def countThemAll(table,temp1,temp2):
 # count of triplets that appeared in the data
 def countT(table,temp1,temp2):
     count = 0
-    for i in range(43):
-        for j in range(43):
-            for k in range(43):
+    for i in range(54):
+        for j in range(54):
+            for k in range(54):
                 if j == temp1:
                     if k == temp2:
                         if table[i,j,k] != 0:
