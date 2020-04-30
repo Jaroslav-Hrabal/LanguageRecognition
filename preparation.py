@@ -55,6 +55,18 @@ def makeAlphabet():
     alphabet['ý'] = 39
     alphabet['ž'] = 40
     alphabet['š'] = 41
+    #beginning of text
     alphabet['<'] = 42
+    alphabet['ä'] = 43
+    alphabet['ľ'] = 44
+    alphabet['ĺ'] = 45
+    alphabet['ĺ'] = 46
+    alphabet['ô'] = 47
+    alphabet['ö'] = 48
+    alphabet['ô'] = 49
+    alphabet['ő'] = 50
+    alphabet['ŕ'] = 51
+    alphabet['ü'] = 52
+    alphabet['ű'] = 53
     return alphabet
 
