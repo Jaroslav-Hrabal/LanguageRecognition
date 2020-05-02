@@ -30,7 +30,7 @@ def smoothTable(table):
     result =  np.zeros((54,54,54))
     for j in range(54):
         for k in range(54):
-            #performance optimalization v3.0
+            #performance optimalization v4.0
             d = countThemAll(table,j,k)
             t = d['T']
             z = d['Z']
@@ -58,15 +58,11 @@ def countThemAll(table,temp1,temp2):
     countN = 0
     d = dict()
     for i in range(54):
-        for j in range(54):
-            for k in range(54):
-                if j == temp1:
-                    if k == temp2:
-                        countN += table[i,j,k]
-                        if table[i,j,k] != 0:
-                            countT += 1
-                        if table[i,j,k] == 0:
-                            countZ += 1
+        countN += table[i,temp1,temp2]
+        if table[i,temp1,temp2] != 0:
+            countT += 1
+        if table[i,temp1,temp2] == 0:
+            countZ += 1
     d['T'] = countT
     d['Z'] = countZ
     d['N'] = countN
